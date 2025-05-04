@@ -1,0 +1,395 @@
+:root {
+    --font-family: "Cormorant Upright", sans-serif;
+    --second-family: "Open Sans", sans-serif;
+    --third-family: "Bestermind", sans-serif;
+    --text-color: rgba(255, 255, 255, 1);
+    --main-color: rgba(220, 202, 135, 1);
+    --button-text-color: rgba(12, 12, 12, 1);
+    --desc-color: rgba(170, 170, 170, 1);
+    --main-bg: rgba(4, 4, 4, 1);
+    --border-color: rgba(220, 202, 135, 0.2);
+    --subscribe-input-border: rgba(245, 239, 219, 1);
+    --decor-color: rgba(250, 250, 250, 1);
+    --scroll-gradient-second: rgba(220, 202, 135, 0.24);
+    --header-line-gradient: rgba(255, 255, 255, 0);
+    --btn-second-txt-сolor: rgba(12, 11, 8, 1);
+    --letter-spacing-second: 0.03;
+    --line-height-smaller: 1.35;
+    --line-height-third: 1.3;
+    --letter-spacing-second: 0.03em;
+    --line-height-smaller: 1.35;
+    --form-border-color: rgba(220, 202, 135, 0.2);
+    --updates-img-border: rgba(196, 196, 196, 1);
+}
+
+body {
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+    font-family: var(--font-family);
+    background-color: var(--main-bg);
+    background-image:
+        linear-gradient(to right,
+            rgba(4, 4, 4, 0.5),
+            rgba(4, 4, 4, 0.5)),
+        url(/RESTAURANT/images/first-page/backgrounds/wave-element.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+.container {
+    width: 1680px;
+    margin: 0 auto;
+}
+
+
+/* PADDING */
+
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--btn-second-txt-сolor);
+}
+
+.believe {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-image: url(./images/first-page/backgrounds/about_us-bg.jpg)
+}
+
+.customers {
+    padding-top: 152px;
+    padding-bottom: 152px;
+    background-color: black
+}
+
+/* HEADER */
+
+.header-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75px;
+    letter-spacing: 4%;
+    font-family: var(--second-family);
+}
+
+.header-reference {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 5%;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header-logo {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: var(--font-family);
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.3px;
+    letter-spacing: 4%;
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 437px;
+}
+
+.header-list {
+    display: flex;
+    gap: 32px;
+}
+
+.header-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-roster {
+    display: flex;
+}
+
+.header-element:nth-child(2)::before{
+    content: "";
+    background-image: radial-gradient(rgba(255, 255, 255, 1),rgba(255, 255, 255, 0));
+    width: 1px;
+    height: 57px;
+    display: inline-block;
+}
+
+
+.header-element:nth-child(1) {
+    padding-right: 50px;
+}
+
+/* ABOUT */
+
+.about {
+    background-image:  linear-gradient(
+        to right,
+        rgba(4, 4, 4, 0.5),
+        rgba(4, 4, 4, 0.5)
+    ),
+    url(../images/first-page/icons/white-g.png),
+    url(../images/first-page/backgrounds/about_us-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.about-box {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 136px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.about-wrapper {
+    text-align: right;
+}
+
+
+.about-wrapper-title {
+    color: var(--main-color);
+    line-height: var(--line-height-smaller);
+    letter-spacing: var(--letter-spacing-second);
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.about-wrapper-title::after {
+    content: '';
+    margin-top: 8px;
+    margin-bottom: 32px;
+    background-image: url(../images/first-page/icons/right-spoon.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    display: block;
+    height: 9px;
+}
+
+.about-wrapper-title_first::after {
+    background-image: url(../images/first-page/icons/left-spoon.png);
+    background-position: right;
+}
+.about-wrapper-desc {
+    font-family: var(--second-family);
+    font-size: 16px;
+    color: var(--desc-color);
+    padding-bottom: 32px;
+}
+
+.about-wrapper-btn {
+    padding: 8px 32px;
+    background-color: var(--main-color);
+    color: var(--btn-second-txt-сolor);
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+
+
+.about-wrapper:first-of-type {
+    padding-right: 74px;
+    text-align: right
+}
+
+
+.second-wrapper{
+    padding-left: 96px;
+    text-align: left;
+}
+
+.about-img {
+    height: 703px;
+    width: 84px;
+}
+
+/* BELIEVE */
+
+.believe {
+    background-image: url("../images/first-page/backgrounds/about_us-bg.jpg");
+}
+
+.believe-subtitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 4%;
+    color: var(--text-color);
+    padding-bottom: 8px;
+}
+
+.believe-subtitle::after {
+    content: '';
+    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position: left;
+}
+
+.believe-title {
+    font-family:var(--font-family);
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: 3%;
+    color: var(--main-color);
+    padding-bottom: 64px;
+    letter-spacing: 1.3px;
+}
+
+.believe-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 4%;
+    color: var(--desc-color);
+    padding-bottom: 64px;
+}
+
+.believe-text::first-line {
+    content:"";
+    background-image: url(../images/first-page/icons/quote.png);
+    display: block;
+    background-size: 25px;
+    width: 47px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.believe-name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 4%;
+    padding-bottom: 8px;
+    color: var(--main-color);
+}
+
+.believe-signature {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: 4%;
+    color: var(--desc-color);
+}
+.believe-article {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 96px;
+    justify-content: center;
+}
+
+.believe-wrapper {
+    width: 570px;
+    height: 615px;
+}
+
+.believe-job {
+    color: var(--desc-color);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.04px;
+    font-family: var(--second-family);
+    padding-bottom: 64px;
+}
+
+
+
+/* CUSTOMERS */
+
+.customers {
+    background-color: var(--btn-second-txt-сolor);
+}
+
+.customers-title {
+    text-align: center;
+    font-weight: 600px;
+    font-size: 64px;
+    letter-spacing: 3%;
+    color: var(--main-color);
+    padding-bottom: 64px;
+    padding-top: 8px;
+    letter-spacing: 1.3px;
+}
+
+.customers-subtitle {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 700px;
+    font-size: 23px;
+    letter-spacing: 4%;
+    color:var(--text-color);
+    padding-bottom: 8px;
+    letter-spacing: 1.3px;
+}
+
+.customers-subtitle::after {
+    content: '';
+    background-image: url(../images/first-page/icons/right-spoon.png);
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    background-position:center ;
+}
+.customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.customers-item {
+    display: flex;
+}
+
+
+.customers-text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 4%;
+    color: var(--desc-color);
+}
+
+.customers-name {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 4%;
+    color: var(--main-color);
+}
+
+.customers-job {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 4%;
+    color: var(--subscribe-input-border);
+}
+
+.customers-img {
+    margin-right: 34px;
+}
+
+.customers-wrapper {
+    width: 412px;
+}
