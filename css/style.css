@@ -25,12 +25,7 @@ body {
     letter-spacing: 0.04em;
     font-family: var(--font-family);
     background-color: var(--main-bg);
-    background-image:
-        linear-gradient(to right,
-            rgba(4, 4, 4, 0.5),
-            rgba(4, 4, 4, 0.5)),
-        url(/RESTAURANT/images/first-page/backgrounds/wave-element.jpg);
-    background-repeat: no-repeat;
+    background-color: var(--btn-second-txt-color);
     width: 100%;
 }
 
@@ -192,7 +187,7 @@ body {
 .about-img {
     height: 703px;
     width: 84px;
-    padding-left:74px;
+    padding-left: 74px;
     padding-right: 96px;
 }
 
@@ -201,6 +196,7 @@ body {
     padding-top: 128px;
     padding-bottom: 128px;
     background-image: url(../images/first-page/backgrounds/about_us-bg.jpg);
+    position: relative;
 }
 
 .believe-container {
@@ -277,6 +273,14 @@ body {
     height: 615px;
 }
 
+.believe-logo {
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    right: 264px;
+    bottom: -97px;
+}
+
 .believe-job {
     color: var(--main-second-color);
     font-weight: 400;
@@ -304,7 +308,6 @@ body {
     background-color: var(--btn-second-txt-сolor);
     padding-top: 152px;
     padding-bottom: 152px;
-    background-color: black
 }
 
 .customers-title {
@@ -344,6 +347,7 @@ body {
 
 .customers-item {
     display: flex;
+    position: relative;
 }
 
 .customers-text {
@@ -369,7 +373,12 @@ body {
     color: var(--input-border);
 }
 
-
+.customers-icon {
+    position: absolute;
+    top: 170px;
+    left: 160px;
+    z-index: 2;
+}
 
 .customers-img {
     margin-right: 34px;
@@ -377,317 +386,4 @@ body {
 
 .customers-wrapper {
     width: 412px;
-}
-
-.updates-subtitle {
-    display: block;
-    font-size: 23px;
-    color: var(--txt-color);
-    text-align: center;
-    font-family: var(--font-family);
-    margin-top: 152px;
-}
-
-.updates-subtitle::after {
-    content: '';
-    background-image: url('../images/first-page/icons/right-spoon.png');
-    margin-top: 8px;
-    margin-bottom: 8px;
-    background-repeat: no-repeat;
-    display: block;
-    height: 9px;
-    background-position: center;
-}
-
-.updates-title {
-    display: block;
-    font-size: 64px;
-    text-align: center;
-    font-family: var(--font-family);
-    color: var(--main-txt);
-    padding-bottom: 64px;
-}
-
-.updates-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 412px;
-}
-
-.updates-wrapper-text {
-    color: var(--decor-color);
-    font-family: var(--second-family);
-    line-height: 175%;
-    padding-bottom: 32px;
-    padding-top: 24px;
-}
-
-.updates-list {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-}
-
-.updates-list-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 412px;
-    text-align: left;
-    border-color: var(--img-border);
-}
-
-.updates-article-title {
-    font-weight: 400;
-    font-size: 32px;
-    color: var(--main-txt);
-    line-height: var(--line-height-third);
-    padding-bottom: 32px;
-}
-
-.updates-article-title:hover {
-    text-decoration: underline;
-}
-
-.updates-article-desc {
-    padding-left: 0;
-    font-size: 16px;
-    font-family: var(--second-family);
-    color: var(--main-second-color);
-    padding-bottom: 32px;
-}
-
-.updates-article-link {
-    color: var(--main-txt);
-    font-family: var(--font-family);
-    line-height: 1.75;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.updates-button {
-    font-family: var(--font-family);
-    padding: 8px 32px;
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--btn-txt);
-    background-color: var(--main-txt);
-    border: 1px solid var(--main-txt);
-    display: block;
-    margin: 0 auto;
-    margin-top: 64px;
-}
-
-.updates-aticle-img {
-    border: 0.5px solid rgba(220, 202, 135, 0.2);
-}
-
-.newsletter {
-    height: 500px;
-    padding: 80px 180px;
-}
-
-.newsletter-container {
-    background-color: var(--main-bg);
-    border: 1px solid var(--main-second-color);
-    background-color: var(--btn-txt);
-    border: 1px solid var(--form-border-color);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.newsletter-title {
-    color: var(--main-txt);
-    font-size: 64px;
-    font-family: var(--font-family);
-    letter-spacing: 3px;
-    font-weight: 600;
-    line-height: 1.3px;
-    padding-top: 8px;
-    padding-bottom: 24px;
-}
-
-.newsletter-subtitle {
-    font-weight: 700;
-    font-family: var(--font-family);
-    font-size: 23px;
-    letter-spacing: var(--letter-spacing-second);
-    color: var(--txt-color);
-    padding-bottom: 8px;
-}
-
-.newsletter-subtitle::after {
-    content: '';
-    background-image: url(../images/first-page/icons/right-spoon.png);
-    background-repeat: no-repeat;
-    display: block;
-    height: 9px;
-    background-position: center;
-}
-
-.newsletter-text {
-    font-family: var(--second-family);
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: var(--letter-spacing-second);
-    color: var(--txt-color);
-    line-height: 175%;
-}
-
-
-.newsletter-input {
-    padding: 16px 519px 16px 19px;
-    font-weight: 600;
-    font-family: var(--font-family);
-    font-size: 16px;
-    letter-spacing: var(--letter-spacing-second);
-    background-color: var(--btn-txt);
-    color: var(--main-second-color);
-    border: 1px solid var(--input-border);
-}
-
-.newsletter-button {
-    font-family: var(--font-family);
-    padding: 8px 32px;
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--btn-txt);
-    background-color: var(--main-txt);
-    border: 1px solid var(--main-txt);
-    margin-left: 32px;
-}
-
-.footer {
-    background: linear-gradient(to right,
-            rgba(4, 4, 4, 0.5),
-            rgba(4, 4, 4, 0.5)),
-        url(../images/second-page/backgrounds/background-image.jpg);
-    padding-bottom: 138px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.footer-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 126px;
-}
-
-.footer-adress {
-    text-align: center;
-}
-
-.footer-adress-list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.footer-adress-item-title {
-    color: var(--input-border);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: var(--line-height-smaller);
-    letter-spacing: var(--letter-spacing-second);
-    margin-bottom: 24px;
-}
-
-.footer-adress-item-desc {
-    color: var(--main-second-color);
-    font-family: var(--second-family);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.footer-title {
-    color: var(--main-txt);
-    text-align: center;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: var(--line-height-smaller);
-    letter-spacing: var(--letter-spacing-second);
-    text-transform: uppercase;
-    margin-bottom: 32px;
-}
-
-.footer-desc {
-    color: var(--txt-color);
-    text-align: center;
-    font-family: var(--second-family);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: var(--line-height-smaller);
-    letter-spacing: var(--letter-spacing-second);
-    margin-bottom: 16px;
-    width: 438px;
-}
-
-.footer-desc::after {
-    content: '';
-    background-image: url(../images/first-page/icons/right-spoon.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 40px;
-    height: 9px;
-    margin: 16px auto;
-    display: block;
-}
-
-.footer-sm-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-}
-
-.footer-list {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.footer-item-title {
-    color: var(--input-border);
-    font-size: 32px;
-    font-weight: 400;
-    line-height: var(--line-height-smaller);
-    letter-spacing: var(--letter-spacing-second);
-    padding-bottom: 16px;
-}
-
-.footer-item-desc {
-    color: var(--main-second-color);
-    font-family: var(--second-family);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: var(--line-height-smaller);
-}
-
-.footer-copyright {
-    color: var(--main-second-color);
-    text-align: center;
-    font-family: var(--second-family);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: var(--line-height-smaller);
-    letter-spacing: var(--letter-spacing-second);
-    display: block;
-}
-
-.footer-container {
-    display: flex;
-    gap: 64px;
-    flex-direction: column;
-}
-
-.footer-box {
-    display: flex;
-    gap: 229px;
-    align-items: center;
-    justify-content: center;
 }
